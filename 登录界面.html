@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none; 
+        }
+        body{
+            /* 弹性容器水平居中 */
+            display: flex;
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+            height: 100vh;
+            background-image: url(./picture/background.jpg);
+            background-size: cover;
+        }
+        .login{
+            width: 550px;
+            height: 400px;
+            display: flex;
+            /* 边角圆化 */
+            border-radius: 12px;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+            /* 背景模糊化 */
+            backdrop-filter: blur(6px);
+            /* box影子 */
+            box-shadow: 0 0 20px rgb(195, 210, 219);
+            /* 渐变色 */
+            background: linear-gradient(
+                to right bottom,
+                rgba(203, 212, 212, 0.7),
+                rgba(174, 174, 184, 0.5),
+                rgba(178, 206, 230, 0.4)
+            );
+        }
+        .box{
+            /* 隐藏超出部分 */
+            overflow: hidden;
+            /* 弹性容器 */
+            display: flex;
+            /* 垂直顺序 */
+            flex-direction: column;
+        }
+        .table{
+            /* 设置字体 */
+            font: 900 50px ' ';
+            /* 水平居中 */
+            text-align: center;
+            /* 字母直接的间隔 */
+            letter-spacing: 5px;
+        }
+        .box input{
+            /* 用户名输入栏的宽度 */
+            width: 400px;
+            height: 100%;
+            /* 字体 */
+            /*  font: 900 16px ' ';style size/line-height family  */
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            /* 去掉焦点框 */
+            outline: none;
+            padding: 8px;
+            /* 背景透明 */
+            background-color: transparent;
+            /* 边框 */
+            border: 5px;
+            border-bottom:3px solid rgb(157, 167, 192);
+        }
+        .go{
+            /* 水平居中 */
+            text-align: center;
+            /* 把<a>改为块元素 */
+            display: block;
+            background-color: aqua;
+            /* 字体设置 */
+            font: 900 24px ' ';
+            /* 圆润 */
+            border-radius: 10px;
+            /*  */
+            height: 24px;
+            /*  */
+            padding: 12px;
+            margin-top: 20px;
+            color: #fff;
+            /* 字母间隔 */
+            letter-spacing: 3px;
+            background-image: linear-gradient(to right,#d4dbdd,rgb(196, 187, 187));
+        }
+    </style>
+</head>
+<body>
+    <!-- .login>.box>p.table快速 -->
+    <div class="login">
+        <div class="box">
+            <p class="table">Login</p>
+            <br>
+            <input type="text" placeholder="用户名">
+            <input type="password" placeholder="密码">
+            <br>
+            <a href="#" class="go">Go</a>
+        </div>
+    </div>
+</body>
+</html>
