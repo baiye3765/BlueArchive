@@ -1,0 +1,33 @@
+.nav-left{
+    height: 100vh;
+    width: 300px;
+}
+.nav-left-header{
+    display: flex;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    height: 3000px;
+}
+.nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.nav-strategy{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 3px;
+}
+.前提{
+    width: 1200px;
+    height: 300px;
+}
